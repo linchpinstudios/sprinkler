@@ -16,11 +16,13 @@ class App(object):
     def createSprinklers(self):
         sprinklers = self.config.get('Sprinklers')
 
-        for sprinkler in sprinklers
+        for sprinkler in sprinklers:
             self.sprinklers.add( Sprinkler(sprinkler['name'], sprinkler['pin']) )
 
     def run(self):
-        for sprinkler in self.sprinklers.items()
+        sprinklers = self.sprinklers.items()
+
+        for sprinkler in sprinklers:
             sprinkler.start()
             time.sleep(5)
             sprinkler.stop()

@@ -1,8 +1,7 @@
-from 'Config.py' import Config
-from 'Collections/Collection.py' import Collection
-from 'Models/Sprinkler.py' import Sprinkler
+from Config import Config
+from Collections.Collection import Collection
+from Models.Sprinkler import Sprinkler
 
-import CHIP_IO.GPIO as GPIO
 import time
 
 class App(object):

@@ -3,13 +3,14 @@ import time
 
 class Sprinkler(object):
     # Sprinkler Status
-    self.on = False
+    on = False
 
     def __init__(self, name, pin):
         # Name of the sprinkler bank
         self.name = name
         # Sprinkler Pin
         self.pin = pin
+
 
     def initializeGPIO(self):
         GPIO.setup(self.pin, GPIO.OUT, initial=1)

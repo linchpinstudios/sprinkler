@@ -7,15 +7,16 @@ import time
 class App(object):
 
     def __init__(self):
+        self.sprinklers = Collection()
         self.bootstrap()
 
     def bootstrap(self):
         self.config = Config()
 
     def createSprinklers(self):
-        self.sprinklers = Collection()
+        sprinklers = self.config.get('Sprinklers')
 
-        for sprinkler in self.config.get('Sprinklers')
+        for sprinkler in sprinklers
             self.sprinklers.add( Sprinkler(sprinkler['name'], sprinkler['pin']) )
 
     def run(self):

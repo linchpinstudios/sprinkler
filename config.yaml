@@ -1,0 +1,29 @@
+Sprinklers:
+  - name: Bank 1
+    pin: U13_29
+  - name: Bank 2
+    pin: U13_32
+  - name: Bank 3
+    pin: U13_31
+  - name: Bank 4
+    pin: U13_34
+  - name: Bank 5
+    pin: U13_33
+  - name: Bank 6
+    pin: U13_36
+
+Programs:
+  - start: 700
+    durations:
+      - bank: 0
+        duration: 10
+      - bank: 1
+        duration: 12
+      - bank: 2
+        duration: 12
+      - bank: 3
+        duration: 15
+      - bank: 4
+        duration: 10
+      - bank: 5
+        duration: 11
